@@ -2,11 +2,9 @@
 
 A reproducible, educational Jupyter Notebook for comparing **single-threaded dense matrix multiplication** implemented in **C++**, **Rust**, and **Go**. The experiment uses the same numerical algorithm and input data in all three languages, validates the computed results, and compares **median kernel execution time** and **speedup relative to C++**.
 
-> **Scope:** This is a teaching microbenchmark, not a definitive ranking of programming languages. Results depend on the processor, compiler versions, optimization settings, and system load.
-
 ## Notebook
 
-[`benchmark_cpp_rust_go_english(1).ipynb`](benchmark_cpp_rust_go_english%281%29.ipynb)
+[Google Colab](https://colab.research.google.com/drive/1V9UT34JfXH7lQmQirWipBj3LHyUlUEhZ?usp=sharing)
 
 ## Requirements
 
