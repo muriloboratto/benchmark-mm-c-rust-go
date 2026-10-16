@@ -25,8 +25,6 @@ Install the Python dependencies if they are not already available:
 python3 -m pip install jupyter pandas matplotlib
 ```
 
-> Depending on your distribution's Python packaging policy, use a virtual environment for the Python dependencies. The notebook itself contains `apt-get install` but does not run `apt-get update` or install the Python packages.
-
 ## Run the experiment
 
 1. Place the notebook in a working directory and launch `jupyter lab` (or `jupyter notebook`).
@@ -50,9 +48,9 @@ matrix_benchmark/
 
 All implementations use square, row-major `float64` matrices and the same sequential **i–k–j** loop ordering:
 
-\[
+$$
 C_{ij} = \sum_{k=0}^{N-1} A_{ik} B_{kj}
-\]
+$$
 
 The input matrices are initialized deterministically:
 
@@ -112,6 +110,3 @@ Larger matrices increase runtime and memory requirements. For more reliable comp
 - Memory hierarchy, CPU frequency scaling, thermal conditions, and background tasks can influence timings.
 - Potential next steps include cache blocking/tiling, SIMD analysis, multicore parallelism, and comparisons against BLAS implementations.
 
-## License
-
-No license is specified in the notebook. Add a license file if you intend to distribute or reuse this project under explicit terms.
